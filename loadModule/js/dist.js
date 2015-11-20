@@ -268,8 +268,8 @@ Module.prototype.exec = function () {
 
     return exports;
 };
-var seajs = {};
-seajs.use = function (ids, callback) {
+var rexjs = {};
+rexjs.use = function (ids, callback) {
     var mod = Module.get('_use_special_id', ids);
     mod.callback = function () {
         var exports = [];
